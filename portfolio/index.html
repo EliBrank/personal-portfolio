@@ -7,13 +7,23 @@
     <title>Elias Brinkman Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
   </head>
   <body>
 
-    <main>
+    <div class="full-page-container">
+
+      <!-- LEFT SIDE (STICKY) -->
       <header class="page-details">
-        <div class="intro">
-          <img src="" alt="">
+
+        <div class="page-intro">
+          <img
+            src="/professional_pfp.webp"
+            alt="Headshot for Elias Brinkman"
+            class="headshot"
+          >
           <div class="title">
             <h1>ELIAS BRINKMAN</h1>
             <p>
@@ -21,8 +31,164 @@
             </p>
           </div>
         </div>
+
+        <nav class="section-nav">
+          <ul class="section-list">
+            <li>[ ABOUT ME ]</li>
+            <li>[ PROJECTS ]</li>
+            <li>[ CONTACT ]</li>
+          </ul>
+        </nav>
+
+        <nav class="social-nav">
+          <ul class="social-list">
+            <li>
+              <i class="fa-brands fa-linkedin"></i>
+            </li>
+            <li>
+              <i class="fa-brands fa-github"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-envelope"></i>
+            </li>
+            <li>
+              <i class="fa-regular fa-file"></i>
+            </li>
+          </ul>
+        </nav>
+
+        <footer>
+          <p>
+            This page was designed by me, with inspiration from <a href="https://brittanychiang.com/">Brittany Chiang</a>
+          </p>
+        </footer>
+
       </header>
-    </main>
+
+      <!-- RIGHT SIDE (SCROLLABLE) -->
+      <main>
+
+        <!-- ABOUT ME -->
+        <section id="about-me" class="about-me">
+          <h2 class="section-title">
+            ABOUT ME
+          </h2>
+          <div class="self-introduction">
+            <p>My passion for digital art—illustration,  animation, 3D modeling, graphic design—fueled a certain curiosity for  software development. As I worked with tools like Blender and After  Effects, I discovered their dedicated communities for scripting and  began to understand the potential that coding could bring to my work.</p>
+            <p>I've now developed a solid foundation in various languages and frameworks,  and it's a path I've now wished I had taken earlier. Programming  scratches my itch for problem-solving while paving new avenues for  creativity.</p>
+          </div>
+          <button class="btn">
+            VIEW RESUME
+          </button>
+        </section>
+
+        <!-- PROJECTS -->
+        <section id="projects" class="projects">
+          <h2 class="section-title">
+            PROJECTS
+          </h2>
+
+          <div class="card project-entry">
+            <div class="project-info">
+              <div class="metadata">
+                <div class="title">
+                  GIDEON'S PUZZLE BOX
+                </div>
+                <div class="date">
+                  DEC 2024
+                </div>
+              </div>
+              <div class="external-links">
+                <ul class="external-links-list">
+                  <li>
+                    <i class="fa-brands fa-github"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <p>An interactive 3D puzzle box, using three.js</p>
+              </div>
+            </div>
+            <div class="project-thumbnail">
+              <img src="" alt="Puzzlebox three-quarter view">
+            </div>
+          </div>
+
+          <div class="card project-entry">
+            <div class="project-info">
+              <div class="metadata">
+                <div class="title">
+                  FOR THE RECORD
+                </div>
+                <div class="date">
+                  NOV 2024
+                </div>
+              </div>
+              <div class="external-links">
+                <ul class="external-links-list">
+                  <li>
+                    <i class="fa-brands fa-github"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <p>Personal site for showcasing my record collection, via carousels and album art grids</p>
+              </div>
+            </div>
+            <div class="project-thumbnail">
+              <img src="" alt="Hero section from For the Record homepage">
+            </div>
+          </div>
+
+          <div class="card project-entry">
+            <div class="project-info">
+              <div class="metadata">
+                <div class="title">
+                  UNDERBRUSH
+                </div>
+                <div class="date">
+                  AUG 2024
+                </div>
+              </div>
+              <div class="external-links">
+                <ul class="external-links-list">
+                  <li>
+                    <i class="fa-brands fa-github"></i>
+                  </li>
+                  <li>
+                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <p>A pixel art platformer created in the Godot Engine using the Godot's own GDScript.</p>
+              </div>
+            </div>
+            <div class="project-thumbnail">
+              <img src="" alt="Underbrush start screen">
+            </div>
+          </div>
+
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contact" class="contact">
+          <h2 class="section-title">
+            CONTACT
+          </h2>
+          <p class="contact-cta">Want to get in touch? Send me a message!</p>
+          <button class="btn">EZB.BUSINESS@PM.ME</button>
+        </section>
+
+      </main>
+
+    </div>
 
     <script type="module" src="/src/main.js"></script>
   </body>
