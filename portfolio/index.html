@@ -13,10 +13,10 @@
   </head>
   <body>
 
-    <div class="full-page-container">
+    <div class="full-page-container wrapper">
 
       <!-- LEFT SIDE (STICKY) -->
-      <header class="page-details">
+      <header class="page-details half-page">
 
         <div class="page-intro">
           <img
@@ -24,8 +24,8 @@
             alt="Headshot for Elias Brinkman"
             class="headshot"
           >
-          <div class="title">
-            <h1>ELIAS BRINKMAN</h1>
+          <div class="page-title">
+            <h1>ELIAS Z. BRINKMAN</h1>
             <p>
               Front-end Developer & Artist
             </p>
@@ -34,156 +34,202 @@
 
         <nav class="section-nav">
           <ul class="section-list">
-            <li>[ ABOUT ME ]</li>
-            <li>[ PROJECTS ]</li>
-            <li>[ CONTACT ]</li>
-          </ul>
-        </nav>
-
-        <nav class="social-nav">
-          <ul class="social-list">
             <li>
-              <i class="fa-brands fa-linkedin"></i>
+              <a href="#about-me" class="nav-link">[ ABOUT ME ]</a>
             </li>
             <li>
-              <i class="fa-brands fa-github"></i>
+              <a href="#projects" class="nav-link">[ PROJECTS ]</a>
             </li>
             <li>
-              <i class="fa-regular fa-envelope"></i>
-            </li>
-            <li>
-              <i class="fa-regular fa-file"></i>
+              <a href="#contact" class="nav-link">[ CONTACT ]</a>
             </li>
           </ul>
         </nav>
 
         <footer>
+
+          <nav class="social-nav">
+            <ul class="social-list">
+              <li>
+                <a href="https://www.linkedin.com/in/elias-brinkman">
+                  <i class="fa-brands fa-linkedin"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/EliBrank">
+                  <i class="fa-brands fa-github"></i>
+                </a>
+              </li>
+              <li>
+                <a href="mailto:ezb.business@pm.me">
+                  <i class="fa-regular fa-envelope"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa-regular fa-file"></i>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
           <p>
             This page was designed by me, with inspiration from <a href="https://brittanychiang.com/">Brittany Chiang</a>
           </p>
+
         </footer>
 
       </header>
 
       <!-- RIGHT SIDE (SCROLLABLE) -->
-      <main>
+      <main class="main-content half-page">
 
         <!-- ABOUT ME -->
-        <section id="about-me" class="about-me">
+        <section id="about-me" class="section about-me">
           <h2 class="section-title">
             ABOUT ME
           </h2>
-          <div class="self-introduction">
-            <p>My passion for digital art—illustration,  animation, 3D modeling, graphic design—fueled a certain curiosity for  software development. As I worked with tools like Blender and After  Effects, I discovered their dedicated communities for scripting and  began to understand the potential that coding could bring to my work.</p>
-            <p>I've now developed a solid foundation in various languages and frameworks,  and it's a path I've now wished I had taken earlier. Programming  scratches my itch for problem-solving while paving new avenues for  creativity.</p>
+
+          <div class="section-content">
+            <div class="self-introduction">
+              <p>My passion for digital art—illustration,  animation, 3D modeling, graphic design—fueled a certain curiosity for  software development. As I worked with tools like Blender and After  Effects, I discovered their dedicated communities for scripting and  began to understand the potential that coding could bring to my work.</p>
+              <br>
+              <p>I've now developed a solid foundation in various languages and frameworks,  and it's a path I've now wished I had taken earlier. Programming  scratches my itch for problem-solving while paving new avenues for  creativity.</p>
+            </div>
+            <button class="btn">
+              VIEW RESUME
+            </button>
           </div>
-          <button class="btn">
-            VIEW RESUME
-          </button>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="projects">
+        <section id="projects" class="section projects">
           <h2 class="section-title">
             PROJECTS
           </h2>
 
-          <div class="card project-entry">
-            <div class="project-info">
-              <div class="metadata">
-                <div class="title">
-                  GIDEON'S PUZZLE BOX
-                </div>
-                <div class="date">
-                  DEC 2024
-                </div>
-              </div>
-              <div class="external-links">
-                <ul class="external-links-list">
-                  <li>
-                    <i class="fa-brands fa-github"></i>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="description">
-                <p>An interactive 3D puzzle box, using three.js</p>
-              </div>
-            </div>
-            <div class="project-thumbnail">
-              <img src="" alt="Puzzlebox three-quarter view">
-            </div>
-          </div>
+          <div class="section-content">
 
-          <div class="card project-entry">
-            <div class="project-info">
-              <div class="metadata">
-                <div class="title">
-                  FOR THE RECORD
+            <div class="card project-entry">
+              <div class="project-info">
+                <div class="project-metadata">
+                  <div class="title-date">
+                    <div class="title">
+                      GIDEON'S PUZZLE BOX
+                    </div>
+                    <div class="date">
+                      DEC 2024
+                    </div>
+                  </div>
+                  <div class="external-links">
+                    <ul class="external-links-list">
+                      <li>
+                        <a href="https://github.com/EliBrank/puzzle-box">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/EliBrank/puzzle-box">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="date">
-                  NOV 2024
+                <div class="description">
+                  <p>An interactive 3D puzzle box, using three.js</p>
                 </div>
               </div>
-              <div class="external-links">
-                <ul class="external-links-list">
-                  <li>
-                    <i class="fa-brands fa-github"></i>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="description">
-                <p>Personal site for showcasing my record collection, via carousels and album art grids</p>
+              <div class="project-thumbnail">
+                <img src="/placeholder.png" alt="Puzzlebox three-quarter view">
               </div>
             </div>
-            <div class="project-thumbnail">
-              <img src="" alt="Hero section from For the Record homepage">
-            </div>
-          </div>
 
-          <div class="card project-entry">
-            <div class="project-info">
-              <div class="metadata">
-                <div class="title">
-                  UNDERBRUSH
+            <div class="card project-entry">
+              <div class="project-info">
+                <div class="project-metadata">
+                  <div class="title-date">
+                    <div class="title">
+                      FOR THE RECORD
+                    </div>
+                    <div class="date">
+                      NOV 2024
+                    </div>
+                  </div>
+                  <div class="external-links"> <ul class="external-links-list">
+                      <li>
+                        <a href="https://github.com/EliBrank/atlas-bootstrap">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/EliBrank/puzzle-box">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <div class="date">
-                  AUG 2024
+                <div class="description">
+                  <p>Personal site for showcasing my record collection, via carousels and album art grids</p>
                 </div>
               </div>
-              <div class="external-links">
-                <ul class="external-links-list">
-                  <li>
-                    <i class="fa-brands fa-github"></i>
-                  </li>
-                  <li>
-                    <i class="fa-solid fa-arrow-up-right-from-square"></i>
-                  </li>
-                </ul>
-              </div>
-              <div class="description">
-                <p>A pixel art platformer created in the Godot Engine using the Godot's own GDScript.</p>
+              <div class="project-thumbnail">
+                <img src="/placeholder.png" alt="Hero section from For the Record homepage">
               </div>
             </div>
-            <div class="project-thumbnail">
-              <img src="" alt="Underbrush start screen">
+
+            <div class="card project-entry">
+              <div class="project-info">
+                <div class="project-metadata">
+                  <div class="title-date">
+                    <div class="title">
+                      UNDERBRUSH
+                    </div>
+                    <div class="date">
+                      AUG 2024
+                    </div>
+                  </div>
+                  <div class="external-links">
+                    <ul class="external-links-list">
+                      <li>
+                        <a href="https://github.com/EliBrank/puzzle-box">
+                          <i class="fa-brands fa-github"></i>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="https://github.com/EliBrank/puzzle-box">
+                          <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="description">
+                  <p>A pixel art platformer created in the Godot Engine using the Godot's own GDScript.</p>
+                </div>
+              </div>
+              <div class="project-thumbnail">
+                <img src="/placeholder.png" alt="Underbrush start screen">
+              </div>
             </div>
+
           </div>
 
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="contact">
+        <section id="contact" class="section contact">
           <h2 class="section-title">
             CONTACT
           </h2>
-          <p class="contact-cta">Want to get in touch? Send me a message!</p>
-          <button class="btn">EZB.BUSINESS@PM.ME</button>
+
+          <div class="section-content">
+            <p class="contact-cta">Want to get in touch? Send me a message!</p>
+            <a href="mailto:ezb.business@pm.me">
+              <button class="btn">EZB.BUSINESS@PM.ME</button>
+            </a>
+          </div>
         </section>
 
       </main>
