@@ -46,37 +46,35 @@
           </ul>
         </nav>
 
-        <footer>
+        <nav class="social-nav">
+          <ul class="social-list">
+            <li>
+              <a href="https://www.linkedin.com/in/elias-brinkman">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/EliBrank">
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:ezb.business@pm.me">
+                <i class="fa-regular fa-envelope"></i>
+              </a>
+            </li>
+            <li>
+              <a href="/resume.pdf">
+                <i class="fa-regular fa-file"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
 
-          <nav class="social-nav">
-            <ul class="social-list">
-              <li>
-                <a href="https://www.linkedin.com/in/elias-brinkman">
-                  <i class="fa-brands fa-linkedin"></i>
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/EliBrank">
-                  <i class="fa-brands fa-github"></i>
-                </a>
-              </li>
-              <li>
-                <a href="mailto:ezb.business@pm.me">
-                  <i class="fa-regular fa-envelope"></i>
-                </a>
-              </li>
-              <li>
-                <a href="#">
-                  <i class="fa-regular fa-file"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
-
+        <footer class="attribution">
           <p>
             This page was designed by me, with inspiration from <a href="https://brittanychiang.com/">Brittany Chiang</a>
           </p>
-
         </footer>
 
       </header>
@@ -85,32 +83,36 @@
       <main class="main-content half-page">
 
         <!-- ABOUT ME -->
-        <section id="about-me" class="section about-me">
+        <section id="about-me" class="section about-me scroll-margin">
           <h2 class="section-title">
             ABOUT ME
           </h2>
 
           <div class="section-content">
             <div class="self-introduction">
-              <p>My passion for digital art—illustration,  animation, 3D modeling, graphic design—fueled a certain curiosity for  software development. As I worked with tools like Blender and After  Effects, I discovered their dedicated communities for scripting and  began to understand the potential that coding could bring to my work.</p>
+              <p>I'm a digital artist turned software developer, blending years of experience in 3D visualization and motion graphics with programming. As I got deeper into creative work, I found myself more drawn to the technical side of things—so I made the leap into software development, starting with Atlas School in Tulsa to build my technical foundation.</p>
               <br>
-              <p>I've now developed a solid foundation in various languages and frameworks,  and it's a path I've now wished I had taken earlier. Programming  scratches my itch for problem-solving while paving new avenues for  creativity.</p>
+              <p>Since then, I've been exploring how code can expand creative possibilities rather than limit them. I've honed my skills in web development, focusing on JavaScript, advanced CSS, and Python. Right now, I’m putting that mix of design and programming to work on projects like Gideon’s Puzzle Box, where I use OpenGL via Three.js to bring custom models to life through interactive code.</p>
+              <br>
+              <p>At Atlas School, I’m also a student tutor, where I help others grasp complex concepts and give presentations on topics I’m passionate about. I love breaking down tricky ideas and finding inventive ways to make them click.</p>
+              <br>
+              <p>Technology and art have always been connected for me, and I’m excited to keep pushing the boundaries of both.</p>
             </div>
-            <button class="btn">
-              VIEW RESUME
-            </button>
+            <a href="/resume.pdf">
+              <button class="btn">VIEW RESUME</button>
+            </a>
           </div>
         </section>
 
         <!-- PROJECTS -->
-        <section id="projects" class="section projects">
+        <section id="projects" class="section projects scroll-margin">
           <h2 class="section-title">
             PROJECTS
           </h2>
 
           <div class="section-content">
 
-            <div class="card project-entry">
+            <div class="project-card">
               <div class="project-info">
                 <div class="project-metadata">
                   <div class="title-date">
@@ -129,7 +131,7 @@
                         </a>
                       </li>
                       <li>
-                        <a href="https://github.com/EliBrank/puzzle-box">
+                        <a href="https://puzzlebox.vercel.app/">
                           <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                       </li>
@@ -140,12 +142,14 @@
                   <p>An interactive 3D puzzle box, using three.js</p>
                 </div>
               </div>
-              <div class="project-thumbnail">
-                <img src="/placeholder.png" alt="Puzzlebox three-quarter view">
-              </div>
+              <img
+                src="/puzzle-box_thumb.webp"
+                alt="Puzzlebox three-quarter view"
+                class="project-thumbnail"
+              >
             </div>
 
-            <div class="card project-entry">
+            <div class="project-card">
               <div class="project-info">
                 <div class="project-metadata">
                   <div class="title-date">
@@ -156,14 +160,15 @@
                       NOV 2024
                     </div>
                   </div>
-                  <div class="external-links"> <ul class="external-links-list">
+                  <div class="external-links">
+                    <ul class="external-links-list">
                       <li>
                         <a href="https://github.com/EliBrank/atlas-bootstrap">
                           <i class="fa-brands fa-github"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://github.com/EliBrank/puzzle-box">
+                        <a href="https://elibrank.github.io/atlas-bootstrap/dist/">
                           <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                       </li>
@@ -174,12 +179,14 @@
                   <p>Personal site for showcasing my record collection, via carousels and album art grids</p>
                 </div>
               </div>
-              <div class="project-thumbnail">
-                <img src="/placeholder.png" alt="Hero section from For the Record homepage">
-              </div>
+              <img
+                src="/for-the-record_thumb.webp"
+                alt="Hero section from For the Record homepage"
+                class="project-thumbnail"
+              >
             </div>
 
-            <div class="card project-entry">
+            <div class="project-card">
               <div class="project-info">
                 <div class="project-metadata">
                   <div class="title-date">
@@ -193,12 +200,12 @@
                   <div class="external-links">
                     <ul class="external-links-list">
                       <li>
-                        <a href="https://github.com/EliBrank/puzzle-box">
+                        <a href="https://github.com/EliBrank/underbrush">
                           <i class="fa-brands fa-github"></i>
                         </a>
                       </li>
                       <li>
-                        <a href="https://github.com/EliBrank/puzzle-box">
+                        <a href="https://paddingtonrex.itch.io/underbrush">
                           <i class="fa-solid fa-arrow-up-right-from-square"></i>
                         </a>
                       </li>
@@ -209,9 +216,11 @@
                   <p>A pixel art platformer created in the Godot Engine using the Godot's own GDScript.</p>
                 </div>
               </div>
-              <div class="project-thumbnail">
-                <img src="/placeholder.png" alt="Underbrush start screen">
-              </div>
+              <img
+                src="/underbrush_thumb.png"
+                alt="Underbrush start screen"
+                class="project-thumbnail"
+              >
             </div>
 
           </div>
@@ -219,7 +228,7 @@
         </section>
 
         <!-- CONTACT -->
-        <section id="contact" class="section contact">
+        <section id="contact" class="section contact scroll-margin">
           <h2 class="section-title">
             CONTACT
           </h2>
